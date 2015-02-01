@@ -1,5 +1,7 @@
 <html>
-<head>MVC PHP</head>
+<head>
+<title><?=$produk->title?> | MVC PHP</title>
+</head>
 
 <body>
 

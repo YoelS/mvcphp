@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html>
-<head>MVC PHP</head>
-
+<head>
+<title>MVC PHP </title>
+</head>
 <body>
-
 <table>
 	<tr><td>Title</td><td>Category</td><td>Description</td></tr>
 	<?php 
