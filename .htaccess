@@ -1,5 +1,25 @@
+Options -Indexes
+Options +FollowSymLinks
+
 RewriteEngine On
-RewriteBase /mvcphp/
+#RewriteBase /mvc/
+
+#ewriteCond %{REQUEST_URI} ^sysd.*
+#RewriteRule ^(.*)$ index.php?/$1 [L]
+
+#RewriteCond %{REQUEST_URI} ^appd.*
+#RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+RewriteCond $1 !^(index\.php|robots\.txt|favicon\.ico)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php/$1 [L]
+RewriteRule ^(.*)$ ./index.php/$1 [L,QSA]
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ /index.php/$1 [L]
+
+#ExpiresActive On
+#<FilesMatch "\.(ico|gif|jpe?g|png|js|css)$">
+  #ExpiresDefault "access plus 1 year"
+#</FilesMatch>
