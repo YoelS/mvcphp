@@ -96,11 +96,11 @@
 <body>
 		<div class="headertop">
 			<div class="header">
-			<p>Design Patern MVC PHP OOP</p>
+			<p>Design Patern MVC PHP OOP (LAE FRAMEWORK)</p>
 			</div>
 		</div>
 		<div class="container">
-			<h1>Welcome Lae</h1>
+			<h1>Welcome to LAE FRAMEWORK</h1>
 			
 			<div class="bod">
 				<p>Halaman ini hanya contoh.</p>
